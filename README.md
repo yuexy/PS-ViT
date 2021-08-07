@@ -1,6 +1,6 @@
 # Vision Transformer with Progressive Sampling
 
-This is the official implementation of the paper [Vision Transformer with Progressive Sampling](https://arxiv.org/abs/2108.01684).
+This is the official implementation of the paper [Vision Transformer with Progressive Sampling](https://arxiv.org/abs/2108.01684), ICCV 2021.
 
 
 ![Visual Parser](imgs/overview.png)
