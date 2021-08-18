@@ -10,6 +10,4 @@ if [ ! -d "output" ];then
     mkdir output
 fi
 
-python3 -m torch.distributed.launch --nproc_per_node=$NUM_PROC main.py --config=${CONFIG} \
- --master_port=${MASTER_PORT} main.py --distributed=True \
-2>&1 | tee output/${JOB_NAME}_${NOW}.log
+python3 -m torch.distributed.launch --nproc_per_node=$NUM_PROC --master_port=${MASTER_PORT} main.py --config=${CONFIG} --distributed=True 2>&1 | tee output/${JOB_NAME}_${NOW}.log
