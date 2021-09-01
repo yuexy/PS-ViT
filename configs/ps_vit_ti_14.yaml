@@ -1,5 +1,9 @@
 model: "ps_vit_ti_14"
-batch_size: 32
-lr: 5e-4
+batch_size: 64
+lr: 0.001
 weight_decay: 0.03
 img_size: 224
+drop: 0.0
+mixup: 0.8
+reprob: 0.25
+warmup_epochs: 5

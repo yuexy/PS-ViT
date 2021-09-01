@@ -1,5 +1,5 @@
 model: "ps_vit_b_18"
-batch_size: 32
+batch_size: 64
 lr: 5e-4
 weight_decay: 0.05
 img_size: 224
