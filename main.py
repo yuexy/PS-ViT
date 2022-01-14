@@ -323,8 +323,10 @@ def main():
         global_pool=args.gp,
         bn_tf=args.bn_tf,
         bn_momentum=args.bn_momentum,
-        bn_eps=args.bn_eps,
-        checkpoint_path=args.initial_checkpoint)
+        bn_eps=args.bn_eps)
+
+    if args.initial_checkpoint:
+        load_checkpoint(model, args.initial_checkpoint, args.model_ema)
 
     if args.rank == 0:
         _logger.info(model)
